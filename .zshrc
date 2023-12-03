@@ -117,3 +117,7 @@ source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source /Users/patryk/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/gitstatus/gitstatus.prompt.zsh
+# debbug  pico with jlink 
+export PICO_SDK_PATH=$HOME/rp2040/pico-sdk/
+export PATH=/usr/local/opt/texinfo/bin:$PATH
+
