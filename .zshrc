@@ -83,6 +83,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+export PATH="$HOME/.local/bin":$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -120,5 +121,5 @@ source /Users/patryk/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/gitstatus/gitstatus.prompt.zsh
 # debbug  pico with jlink 
 export PICO_SDK_PATH=$HOME/rp2040/pico-sdk/
-export PATH=/usr/local/opt/texinfo/bin:$PATH
+# export PATH=/usr/local/opt/texinfo/bin:$PATH
 
