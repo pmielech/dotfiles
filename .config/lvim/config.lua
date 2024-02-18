@@ -6,6 +6,19 @@ reload("user.options")
 reload("user.plugins")
 
 
+require("swenv").setup({
+    post_set_venv = function()
+        vim.cmd("LspRestart")
+    end,
+})
+
+
+lvim.builtin.which_key.mappings["C"] = {
+    name = "Python",
+    c = {"<cmd>lua require('swenv.api').pick_venv()<cr>", "Choose venv"}
+}
+
+-- copilot
 require("copilot").setup{
   suggestion = {
     keymap = {
@@ -16,5 +29,6 @@ require("copilot").setup{
     },
   },
 }
+
 local opts = { noremap = true, silent = true }
 vim.api.nvim_set_keymap("n", "<c-s>", "<cmd>lua require('copilot.suggestion').toggle_auto_trigger()<CR>", opts)
