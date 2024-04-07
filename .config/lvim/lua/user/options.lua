@@ -9,7 +9,7 @@ vim.opt.autoindent = true
 
 
 lvim.transparent_window = true
-
+lvim.builtin.project.manual_mode = true
 
 -- LSP
 lvim.builtin.treesitter.ensure_installed = {

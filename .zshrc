@@ -84,6 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export PATH="$HOME/.local/bin":$PATH
+export PATH="/usr/local/Cellar/arm-none-eabi-gcc/13.2.0/bin/:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -110,6 +111,7 @@ export PATH="$HOME/.local/bin":$PATH
 
 alias config="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 alias yab="bash $HOME/run_yabai.sh"
+alias py="python3"
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -122,4 +124,5 @@ source ~/gitstatus/gitstatus.prompt.zsh
 # debbug  pico with jlink 
 export PICO_SDK_PATH=$HOME/rp2040/pico-sdk/
 # export PATH=/usr/local/opt/texinfo/bin:$PATH
+
 
