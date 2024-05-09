@@ -115,11 +115,10 @@ alias py="python3"
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source /Users/patryk/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/gitstatus/gitstatus.prompt.zsh
 # debbug  pico with jlink 
 export PICO_SDK_PATH=$HOME/rp2040/pico-sdk/
