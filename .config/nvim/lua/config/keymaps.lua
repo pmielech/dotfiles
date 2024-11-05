@@ -15,3 +15,16 @@ map.set("n", "dw", "vd_d")
 map.set("n", "te", ":tabedit", opts)
 map.set("n", "<tab>", ":tabnext<Return>", opts)
 map.set("n", "<s-tab>", ":tabprev<Return>", opts)
+
+-- Resize window
+map.set("n", "<C-w><left>", "<C-w><")
+map.set("n", "<C-w><right>", "<C-w>>")
+map.set("n", "<C-w><up>", "<C-w>+")
+map.set("n", "<C-w><down>", "<C-w>-")
+
+-- Increment/decrement
+map.set("n", "+", "<C-a>")
+map.set("n", "-", "<C-x>")
+
+-- Select all
+map.set("n", "<C-a>", "gg<S-v>G")

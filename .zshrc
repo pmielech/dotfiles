@@ -112,6 +112,7 @@ export PATH="/usr/local/Cellar/arm-none-eabi-gcc/13.2.0/bin/:$PATH"
 alias config="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
 alias yab="bash $HOME/run_yabai.sh"
 alias py="python3"
+alias cdd="cd github"
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -125,3 +126,7 @@ export PICO_SDK_PATH=$HOME/rp2040/pico-sdk/
 # export PATH=/usr/local/opt/texinfo/bin:$PATH
 
 
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
